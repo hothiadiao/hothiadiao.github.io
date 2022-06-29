@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <link rel="stylesheet" href="style.css">
+
+   
+    <title>GESTION DE BUDGET</title>
+</head>
+<body>
+  <!-- <form action="#"> --> 
+        <fieldset>
+            <h2>GESTION BUDGET</h2>
+            <p><label for="sold">Solde</label><br><input type="number" id="sold" value="0"></p>     
+            <p><label for="dep" >Dépense<br><input type="number" id="dep" name="dep" value="0"></label></p>
+            <p><label for="bud">Budget</label><br> <input type="number" id="bud" name="bud" value="0" > </p>
+            <h5>Budget-Dépense=Solde</h5> 
+            <section class="listeDepense">
+            <div><strong>Liste des dépenses</strong>
+             <button style="background-color: red;"  id="boutonDepense">Ajouter Depenses</button>
+            </div>
+             <div class="listeD" id="listeDepense"></div>
+           
+           
+        </section>
+            
+                  <!--       <table class="t1">
+                    <tr>
+                        <td>Titre</td>
+                        <td>Montant</td>
+                        <td>Actions</td>
+                    </tr>
+                    --> 
+                  <!--
+                  <tr>
+                        <td id="t1"></td>
+                        <td id="m1"></td>
+                        <td><a href="ajouterDepense.html">Modifier</a> | <a href="ajouterDepense">Supprimer</a></td>
+                    </tr>
+                   
+                    <tr>
+                        <td>Café</td>
+                        <td>100</td>
+                        <td><a href="ajouterDepense">Modifier</a> | <a href="ajouterDepense">Supprimer</a></td>
+                    </tr>  
+                            
+                </table>
+        -->  
+       
+        <!--section pour afficher la liste des revenus --> 
+        <section class="listeRevenu">
+            <div id="listeRe">
+        <strong>Liste des revenus</strong>
+        <button style="background-color: blue;"  id="boutonRevenu">Ajouter Revenu</button> 
+    </div>            <!-- <table class="t2">
+                    <tr>
+                        <td>Titre</td>
+                        <td>Montant</td>
+                        <td>Actions</td>
+                    </tr>
+                    --> 
+                    
+                     <div class="liste" id="listeRevenu"></div>
+                   
+                   
+                </section>
+                   <!--
+                    <tr>
+                        <td id="t2"></td>
+                        <td id="m2"></td>
+                        <td><a href="ajouterRevenu">Modifier</a> | <a href="ajouterRevu">Supprimer</a></td>
+                    </tr>
+                    <tr>
+                        <td>Bonus</td>
+                        <td>100</td>
+                        <td><a href="ajouterRevenu">Modifier</a> | <a href="ajouterRevu">Supprimer</a></td>
+                    </tr> 
+                    -->              
+                </table>
+       
+ </fieldset>
+ <fieldset class="f1">
+   <h2> Ajouter Dépense</h2>
+   <form id="ajouterDepense"> 
+           <table class="t3">
+           <tr>
+               <td>Titre</td>
+               <td><input type="text" id="titre1" name="titre1"></td>
+           </tr>
+           <tr>
+            <td>Montant</td>
+            <td><input type="text" id="montant1" name="montant1"></td>
+        </tr>
+    </table>
+    <button type="submit"  class="valider1" style="background-color: red;"  id="valider1">Valider</button>  
+</form>
+</fieldset>
+     
+    <fieldset class="f2">
+          <h2>Ajouter Revenu</h2>
+          <form id="ajouterRevenu">   
+          <table class="t4">
+                    <tr>
+                        <td>Titre</td>
+                        <td><input type="text" id="titre2" name="titre2"></td>
+                    </tr>
+                    <tr>
+                     <td>Montant</td>
+                     <td><input type="text" id="montant2" name="montant2"></td>
+                 </tr>
+                </table>
+                <button type="submit" class="valider2" style="background-color: blue;"  id="valider2">Valider</button>
+            </form> 
+            </fieldset>
+            <script src="style.js"></script>  
+            <script src="ajouterDepense.js"></script> 
+            <script src="soldee.js"></script>         
+    </body>
+    </html>
